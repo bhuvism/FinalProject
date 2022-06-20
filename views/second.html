@@ -108,9 +108,47 @@ border-radius:20px;
 .insidepop .form-control{
   width:60%;
 }
+
+
+
+.btns {
+  width: 150px;
+  background-color:  #043b9b;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+ display:block;
+ top:3px;
+}
+
+.btns:hover {
+  background-color:#03317f ;
+}
+
 </style>
 <body>
-    <div class="container-fluid border">
+
+
+  <div class="container-fluid border">
+      
+  <div class="row" style="height:60px ;background-color: #4481eb;">
+    <div class="col-6">
+
+      <span>
+        <button type="submit"  class="btns solid" onclick="logout()">logout</button>
+      </span>
+</div>
+    
+    <div class="col-6 ">
+          <button type="submit"  class="btns solid" onclick="logout()">logout</button>
+  </div>
+</div>
       <div class="row pop " id="pop">
         <div class="col-12 " id="">
              
@@ -178,7 +216,7 @@ border-radius:20px;
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 list ">
             <div class="insidelist">
-              <button type="button" style="float:right" onclick="logout()" class="btn btn-primary btn-sm btn-block">logout</button>
+        
 
                   <h3 class="text-center">Shared to me</h3><hr>
                      <div class="listed">
