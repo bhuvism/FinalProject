@@ -10,7 +10,7 @@ const app = express();
 
 app.use(session({secret: 'ssshhhhh',saveUninitialized: true,resave: true}));
 app.use(bodyParser.json());      
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(__dirname + '/views'));
 
 
